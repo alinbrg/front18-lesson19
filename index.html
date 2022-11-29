@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lesson 19</title>
+		<link rel="stylesheet" href="assets/style.css" />
+	</head>
+	<body>
+		<form action="/users" method="" novalidate>
+			<div class="form_group">
+				<label for="user-name">user name</label>
+				<input type="text" id="user-name" name="user-name" />
+				<span id="user-name-message"></span>
+			</div>
+			<div class="form_group">
+				<label for="user-email">user email</label>
+				<input type="email" id="user-email" name="user-email" required />
+				<span id="user-email-message"></span>
+			</div>
+			<div class="form_group">
+				<label for="user-password">user password</label>
+				<input
+					type="password"
+					id="user-password"
+					name="user-password"
+					minlength="8"
+					maxlength="10"
+					required
+				/>
+				<span id="user-password-message"></span>
+			</div>
+
+			<button type="submit">submit form</button>
+		</form>
+
+		<div class="modal" id="button-modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>Modal Title</h3>
+					<button class="modal-close">X</button>
+				</div>
+				<div class="modal-body">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+					facilis officiis nulla unde laudantium quam commodi ab fugit. Qui
+					doloribus expedita repudiandae minus aperiam nulla alias placeat ab,
+					aspernatur adipisci.
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="form-modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>form modal</h3>
+					<button class="modal-close">X</button>
+				</div>
+				<div class="modal-body">Lorem ipsum dolor sit amet</div>
+			</div>
+		</div>
+
+		<button class="open-modal btn">open modal</button>
+
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>

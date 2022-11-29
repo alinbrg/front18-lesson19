@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img {
+	width: 100%;
+}
+.btns {
+	margin-top: auto;
+}
+.btn {
+	padding: 5px;
+	border: none;
+	border-radius: 8px;
+	background-color: aquamarine;
+	margin-right: 10px;
+}
+
+.slider {
+	padding: 50px 20px;
+	position: relative;
+	background-color: cornflowerblue;
+}
+.wrapper {
+	display: flex;
+	max-height: 400px;
+}
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slide {
+	display: none;
+	position: relative;
+}
+.slide.active {
+	display: block;
+}
+.slide div {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: antiquewhite;
+	padding: 20px;
+	border-radius: 12px;
+	text-align: center;
+	max-width: 70%;
+}
+.slide h3 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.slider-btns .btn {
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 20px;
+	margin: 0;
+}
+.next {
+	right: 30px;
+}
+.prev {
+	left: 30px;
+}
+.bullets {
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bullet {
+	width: 20px;
+	height: 20px;
+	background-color: antiquewhite;
+	display: block;
+	margin: 0 10px;
+}
+.bullet.active {
+	background-color: blue;
+}
+.clock {
+	text-align: center;
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+form {
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+	background-color: cadetblue;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.form_group {
+	margin: 10px 0;
+}
+.form_group input {
+	height: 30px;
+	padding: 5px 10px;
+	outline: none;
+}
+.error {
+	border: 2px solid red;
+}
+.success {
+	border: 2px solid green;
+}
+form button {
+	width: 100px;
+	padding: 10px;
+}
+
+.modal {
+	border: 1px solid black;
+	padding: 20px;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.modal.open {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+	max-width: 600px;
+	width: 90%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.9);
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 24px;
+}
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	color: white;
+}
+
+.modal-body {
+	padding: 30px;
+}
+.modal-close {
+	background-color: red;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.open-modal {
+	margin: 50px 0;
+}
